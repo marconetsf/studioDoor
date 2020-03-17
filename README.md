@@ -5,7 +5,7 @@ This program will conversating via HTTP with a local servidor that will care abo
 
 Algorithm - When the ESP8266 working as a WebServer receive a http request it will send de right pulse to control a servo that will moviment the door to open. When the door open, a sensor (that will be installed ahead of the door) will start to captate the presence in a small perimete to recognize when the person left the door range and close it. 
 
-# About the facial recognition
+# About the facial recofnition
 
 xxx
 
@@ -21,20 +21,10 @@ The tecnical name of it is HC-SR501, this module can monitoring the presence of 
 | Sensing Delay | 0.3 ~ 5min|
 | Sensing range | less than 120° |
 
-# About NodeMCU 
-
-Is a microcontroller that can be programed using C++, offer serial interface and a internal ESP8266 that can access internet, using TCP IP protocol, act as a WebServer or a client, making http requests and a lot of other things involving internet. Also, as a microcontroler can comunicate itself with a lot of sensors and actuators to provide some relevant informations about the physical world, temperature, humidity, presence etc...
-
-| Specifications | Values |
-| -------------  | ------ |
-| Voltage | 4.5 ~ 9 V|
-| Output Voltage | 3.3 ~ 0V|
-| GPIOS | 11 |
-| Analog Pin | 01 |
-
 # Electrical Connection Diagram
 
-![Untitled Sketch 2_bb](https://user-images.githubusercontent.com/37492251/76888371-91c65780-6862-11ea-9fda-7c378fadb244.png)
+
+![Untitled Sketch 2_bb](https://user-images.githubusercontent.com/37492251/76890456-2b433880-6866-11ea-9393-19c07e237fd9.png)
 
 ***Observations about schematich is that this Hi-link component can be replaced by any supply with 5v in the output. 
 Theses two resistors are making a voltage divider, that turn 5v in 3.3v (which is te recommended for esp8266)***
