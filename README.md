@@ -5,7 +5,14 @@ This program will conversating via HTTP with a local servidor that will care abo
 
 Algorithm - When the ESP8266 working as a WebServer receive a http request it will send de right pulse to control a servo that will moviment the door to open. When the door open, a sensor (that will be installed ahead of the door) will start to captate the presence in a small perimete to recognize when the person left the door range and close it. 
 
+| Specifications | Values |
+| -------------  | ------ |
+| Output Voltage | 4.5 ~ 9V |
+| Current Limit | 800mA|
+| Working Output | 3.3V 500mA | 
+
 # About the facial recofnition
+
 
 xxx
 
@@ -19,9 +26,6 @@ The tecnical name of it is HC-SR501, this module can monitoring the presence of 
 | Voltage | 5 ~ 20 V|
 | Output Voltage | 3.3 ~ 0V|
 | Sensing Delay | 0.3 ~ 5min|
-| Current Limit | 800mA|
-| Working Output | 3.3V 500mA | 
-
 | Sensing range | less than 120° |
 
 # Electrical Connection Diagram
