@@ -13,15 +13,15 @@
 #include <ArduinoOTA.h>       // Over the air
 #include <Servo.h>            // Motor library 
 
-const char* ssid = "MAPLE ADM";
-const char* password = "mapleadm";
+const char* ssid = "2G_PLAY";
+const char* password = "18091986";
 const int pirSensor = D6;
 
 Servo door;
 ESP8266WebServer server(80);  // Iniciate an objetc of ESP8266WebServer class
 
-IPAddress staticIP(192, 168, 10, 132);
-IPAddress gateway(192, 168, 10, 1);
+IPAddress staticIP(192, 168, 1, 132);
+IPAddress gateway(192, 168, 1, 1);
 IPAddress subnet(255, 255, 255, 0);
 
 const int greenLed = D3;
@@ -89,6 +89,7 @@ void abrirPorta() {
   server.send(200, "text/html", "{\"status\":\"recebido\"}"); //send a json response to the client
   delay(500);
   door1 = true;
+  Serial.println("Acessado");
 }
 
 void pisca(int vezes, int tempo) {

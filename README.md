@@ -19,6 +19,9 @@ The tecnical name of it is HC-SR501, this module can monitoring the presence of 
 | Voltage | 5 ~ 20 V|
 | Output Voltage | 3.3 ~ 0V|
 | Sensing Delay | 0.3 ~ 5min|
+| Current Limit | 800mA|
+| Working Output | 3.3V 500mA | 
+
 | Sensing range | less than 120° |
 
 # Electrical Connection Diagram
