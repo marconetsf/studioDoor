@@ -5,7 +5,7 @@ This program will conversating via HTTP with a local servidor that will care abo
 
 Algorithm - When the ESP8266 working as a WebServer receive a http request it will send de right pulse to control a servo that will moviment the door to open. When the door open, a sensor (that will be installed ahead of the door) will start to captate the presence in a small perimete to recognize when the person left the door range and close it. 
 
-# About the facial recofnition
+# About the facial recognition
 
 xxx
 
