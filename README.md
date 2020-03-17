@@ -21,8 +21,18 @@ The tecnical name of it is HC-SR501, this module can monitoring the presence of 
 | Sensing Delay | 0.3 ~ 5min|
 | Sensing range | less than 120° |
 
-# Electrical Connection Diagram
+# About NodeMCU 
 
+Is a microcontroller that can be programed using C++, offer serial interface and a internal ESP8266 that can access internet, using TCP IP protocol, act as a WebServer or a client, making http requests and a lot of other things involving internet. Also, as a microcontroler can comunicate itself with a lot of sensors and actuators to provide some relevant informations about the physical world, temperature, humidity, presence etc...
+
+| Specifications | Values |
+| -------------  | ------ |
+| Voltage | 4.5 ~ 9 V|
+| Output Voltage | 3.3 ~ 0V|
+| GPIOS | 11 |
+| Analog Pin | 01 |
+
+# Electrical Connection Diagram
 
 ![Untitled Sketch 2_bb](https://user-images.githubusercontent.com/37492251/76888371-91c65780-6862-11ea-9fda-7c378fadb244.png)
 
