@@ -13,8 +13,8 @@
 #include <ArduinoOTA.h>       // Over the air
 #include <Servo.h>            // Motor library 
 
-const char* ssid = "2G_PLAY";
-const char* password = "18091986";
+const char* ssid = "FamiliaDT";//"2G_PLAY";
+const char* password = "amendoim";//"18091986";
 const int pirSensor = D6;
 
 Servo door;
@@ -24,7 +24,7 @@ IPAddress staticIP(192, 168, 1, 132);
 IPAddress gateway(192, 168, 1, 1);
 IPAddress subnet(255, 255, 255, 0);
 
-const int greenLed = D3;
+const int greenLed = D1;
 const int redLed = D4;
 
 bool door1 = false;
@@ -33,7 +33,8 @@ bool sensorStatus = false;
 void setup() {
   Serial.begin(115200);
 
-  door.attach(D5);
+  door.attach(D2);
+  door.write(0);
   pinMode(greenLed, OUTPUT);
   pinMode(redLed, OUTPUT);
   pinMode(pirSensor, INPUT);
@@ -77,7 +78,9 @@ void loop() {
   if (door1 == true) {
     sensorStatus = digitalRead(pirSensor); // Checking the sensor status
     if (sensorStatus == true) {
+      Serial.println("Porta Fechada");
       door.write(0);
+      door1 = false;
     }
   }
 
@@ -89,7 +92,7 @@ void abrirPorta() {
   server.send(200, "text/html", "{\"status\":\"recebido\"}"); //send a json response to the client
   delay(500);
   door1 = true;
-  Serial.println("Acessado");
+  Serial.println("Porta Aberta");
 }
 
 void pisca(int vezes, int tempo) {
