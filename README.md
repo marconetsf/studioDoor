@@ -8,7 +8,9 @@ Algorithm - When the ESP8266 working as a WebServer receive a http request it wi
 # About NodeMCU 
 
 Is a microcontroller that can be programed using C++, offer serial interface and a internal ESP8266 that can access internet, using TCP IP protocol, act as a WebServer or a client, making http requests and a lot of other things involving internet. Also, as a microcontroler can comunicate itself with a lot of sensors and actuators to provide some relevant informations about the physical world, temperature, humidity, presence etc...
-
+ 
+![Anotação 2020-03-18 141130](https://user-images.githubusercontent.com/37492251/76987765-7589ef80-6922-11ea-9896-efcd29ece26d.png)
+ 
 | Specifications | Values |
 | -------------  | ------ |
 | Voltage | 4.5 ~ 9 V|
