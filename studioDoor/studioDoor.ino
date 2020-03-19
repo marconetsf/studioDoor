@@ -13,15 +13,15 @@
 #include <ArduinoOTA.h>       // Over the air
 #include <Servo.h>            // Motor library 
 
-const char* ssid = "FamiliaDT";//"2G_PLAY";
-const char* password = "amendoim";//"18091986";
+const char* ssid = "2G_PLAY";//"FamiliaDT";
+const char* password = "18091986";//"amendoim";
 const int pirSensor = D6;
 
 Servo door;
-ESP8266WebServer server(80);  // Iniciate an objetc of ESP8266WebServer class
+ESP8266WebServer server(80);  // Iniciate an object of ESP8266WebServer class
 
-IPAddress staticIP(192, 168, 1, 132);
-IPAddress gateway(192, 168, 1, 1);
+IPAddress staticIP(192, 168, 1, 132); 
+IPAddress gateway(192, 168, 1, 1);    //Studio's Gateway is 192.168.0.1 don't forget to put the right ip 
 IPAddress subnet(255, 255, 255, 0);
 
 const int greenLed = D1;
@@ -43,7 +43,7 @@ void setup() {
   // WiFi Connection
   Serial.print("Connecting to ");
   Serial.println(ssid);
-  WiFi.config(staticIP, gateway, subnet);
+  //WiFi.config(staticIP, gateway, subnet);
   WiFi.begin(ssid, password);
   while (WiFi.status() != WL_CONNECTED) {
     delay(500);
